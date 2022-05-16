@@ -31,7 +31,7 @@ public class LoginController {
 //		
 //		return "login";
 //	}
-	
+
 	@PostMapping("login")
 	public String login(Login login) {
 		System.out.println(login.getEmail());
