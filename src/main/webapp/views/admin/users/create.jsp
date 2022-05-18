@@ -6,13 +6,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/su22b1_it16308_sof3021/css/bootstrap.min.css" />
 </head>
 <body>
 	<form:form method="POST" modelAttribute="user"
 		action="/su22b1_it16308_sof3021/admin/users/store">
 		<div>
 			<label>Họ tên</label>
-			<form:input name="hoTen" path="hoTen" />
+			<form:input name="hoTen" path="hoTen" class="form-control" />
+			<form:errors path="hoTen" class="text-danger" />
 		</div>
 		<div>
 			<label>Địa chỉ</label>
@@ -41,5 +43,9 @@
 		</div>
 		<button>Save</button>
 	</form:form>
+	
+	<script src="/su22b1_it16308_sof3021/js/jquery.min.js"></script>
+	<script src="/su22b1_it16308_sof3021/js/popper.min.js"></script>
+	<script src="/su22b1_it16308_sof3021/js/bootstrap.min.js"></script>
 </body>
 </html>
